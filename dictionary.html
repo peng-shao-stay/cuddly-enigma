@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手语词典 - 手语e站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dictionary.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>手语e站</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="courses.html">课程</a></li>
+                <li><a href="dictionary.html" class="active">手语词典</a></li>
+                <li><a href="community.html">学习社区</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dictionary-main">
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜索手语词汇...">
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+
+        <div class="dictionary-content">
+            <div class="filters">
+                <div class="filter-group">
+                    <h4>地区</h4>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="region" value="mainland" checked>
+                            <span class="radio-text">中国大陆</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="region" value="hongkong">
+                            <span class="radio-text">香港</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="region" value="taiwan">
+                            <span class="radio-text">台湾</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>难度</h4>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="all" checked>
+                            <span class="radio-text">全部</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="basic">
+                            <span class="radio-text">入门</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="intermediate">
+                            <span class="radio-text">中级</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="advanced">
+                            <span class="radio-text">高级</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="word-detail">
+                <div class="word-header">
+                    <h2>你好</h2>
+                    <div class="word-meta">
+                        <span class="pinyin">nǐ hǎo</span>
+                        <span class="difficulty">入门</span>
+                    </div>
+                </div>
+
+                <div class="video-container">
+                    <video id="signVideo" poster="images/video-poster.jpg">
+                        <source src="357725.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                    <div class="video-controls">
+                        <button class="play-btn">
+                            <i class="play-icon"></i>
+                        </button>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <button class="loop-btn">循环播放</button>
+                    </div>
+                </div>
+
+                <div class="word-info">
+                    <h3>详细解释</h3>
+                    <p>这是最基础的手语问候语之一。手势动作：右手食指向前，然后向下弯曲，同时面带微笑。</p>
+                    
+                    <div class="usage-examples">
+                        <h3>常见用法</h3>
+                        <ul>
+                            <li>见面打招呼</li>
+                            <li>开始对话</li>
+                            <li>表示友好</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        // ... existing code ...
+    </footer>
+
+    <script src="dictionary.js"></script>
+</body>
+</html> 

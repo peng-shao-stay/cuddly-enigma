@@ -1,0 +1,307 @@
+/* 论坛主体样式 */
+.forum-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* 论坛统计信息 */
+.forum-stats {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-item {
+    padding: 0.5rem 1rem;
+}
+
+.stat-label {
+    color: #666;
+    margin-right: 0.5rem;
+}
+
+.stat-value {
+    color: #3498db;
+    font-weight: 500;
+}
+
+/* 论坛版块样式 */
+.forum-section {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.section-header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.section-stats {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* 版块列表样式 */
+.forum-boards {
+    padding: 1rem;
+}
+
+.board-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 250px;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.board-item:last-child {
+    border-bottom: none;
+}
+
+.board-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-icon img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.board-info h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.board-info h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.board-info h3 a:hover {
+    color: #3498db;
+}
+
+.board-info p {
+    color: #666;
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.board-stats {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.board-stats span {
+    margin-right: 1rem;
+}
+
+/* 最后发帖信息 */
+.last-post {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    border-left: 1px solid #eee;
+}
+
+.post-title {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+}
+
+.post-info {
+    color: #999;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .board-item {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .last-post {
+        grid-column: 1 / -1;
+        border-left: none;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .forum-stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+
+/* 论坛标签样式 */
+.forum-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tab-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: #3498db;
+    color: white;
+}
+
+/* 响应式设计补充 */
+@media (max-width: 768px) {
+    .forum-tabs {
+        padding: 0 0.5rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Logo样式 */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 横幅图片样式 */
+.banner-image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.main-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.main-banner:hover {
+    transform: scale(1.05);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .banner-image {
+        height: 200px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Logo区域样式调整 */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* 大学致谢样式 */
+.university-thanks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid #eee;
+    margin-top: 0.5rem;
+}
+
+.university-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.thanks-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .logo-section {
+        width: 100%;
+        align-items: center;
+    }
+
+    .university-thanks {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+
+    .university-img {
+        width: 50px;
+        height: 50px;
+    }
+} 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程中心 - 手语e站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>手语e站</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="courses.html" class="active">课程</a></li>
+                <li><a href="dictionary.html">手语词典</a></li>
+                <li><a href="community.html">学习社区</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="courses-main">
+        <!-- 课程banner部分 -->
+        <section class="course-banner">
+            <div class="banner-content">
+                <h1>专业手语课程</h1>
+                <p>从入门到精通，开启您的手语学习之旅</p>
+            </div>
+        </section>
+
+        <!-- 课程筛选部分 -->
+        <section class="course-filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>课程类型</label>
+                    <select>
+                        <option value="">全部课程</option>
+                        <option value="basic">基础入门</option>
+                        <option value="daily">日常交流</option>
+                        <option value="professional">职场手语</option>
+                        <option value="medical">医疗手语</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>难度等级</label>
+                    <select>
+                        <option value="">全部难度</option>
+                        <option value="beginner">入门级</option>
+                        <option value="intermediate">进阶级</option>
+                        <option value="advanced">高级</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>课程价格</label>
+                    <select>
+                        <option value="">全部价格</option>
+                        <option value="free">免费课程</option>
+                        <option value="paid">付费课程</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- 课程列表部分 -->
+        <section class="course-list">
+            <!-- 热门课程 -->
+            <div class="section-header">
+                <h2>热门课程</h2>
+                <a href="#" class="view-all">查看全部</a>
+            </div>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/手语.jpg" alt="手语教学" class="course-img">
+                        <div class="course-overlay">
+                            <span class="course-level">入门级</span>
+                            <span class="course-duration">30课时</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>手语基础入门</h3>
+                        <p class="course-description">从零开始学习手语基础知识和常用手势</p>
+                        <div class="course-meta">
+                            <div class="course-stats">
+                                <span><i class="icon-user"></i>2,345人已学习</span>
+                                <span><i class="icon-star"></i>4.8分</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">¥299</span>
+                                <button class="enroll-btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多课程卡片 -->
+            </div>
+
+            <!-- 免费课程 -->
+            <div class="section-header">
+                <h2>免费好课</h2>
+                <a href="#" class="view-all">查看全部</a>
+            </div>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/手语课.jpg" alt="免费手语课程" class="course-img">
+                        <div class="course-overlay">
+                            <span class="course-level">入门级</span>
+                            <span class="course-duration">10课时</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>手语入门体验课</h3>
+                        <p class="course-description">零基础手语学习，快速掌握基本手势</p>
+                        <div class="course-meta">
+                            <div class="course-stats">
+                                <span><i class="icon-user"></i>5,678人已学习</span>
+                                <span><i class="icon-star"></i>4.9分</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">免费</span>
+                                <button class="enroll-btn">立即学习</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多免费课程卡片 -->
+            </div>
+        </section>
+
+        <!-- 学习路径推荐 -->
+        <section class="learning-paths">
+            <h2>学习路径推荐</h2>
+            <div class="path-cards">
+                <div class="path-card">
+                    <div class="path-icon">
+                        <img src="images/pexels-photo-7516578.jpg" alt="基础路径">
+                    </div>
+                    <div class="path-content">
+                        <h3>零基础入门路径</h3>
+                        <p>适合完全没有手语基础的学习者</p>
+                        <ul class="path-courses">
+                            <li>1. 手语基础入门</li>
+                            <li>2. 日常生活手语</li>
+                            <li>3. 简单对话练习</li>
+                        </ul>
+                        <button class="path-btn">开始学习</button>
+                    </div>
+                </div>
+                <!-- 更多学习路径卡片 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        // ... existing code ...
+    </footer>
+
+    <script src="courses.js"></script>
+</body>
+</html> 

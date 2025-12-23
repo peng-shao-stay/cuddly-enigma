@@ -1,0 +1,113 @@
+/* 关于我们页面样式 */
+.about-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* 故事开始部分 */
+.story-hero {
+    text-align: center;
+    padding: 3rem 0;
+    background: #f8f9fa;
+    margin-bottom: 2rem;
+}
+
+.story-content h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* 故事部分 */
+.origin-story {
+    margin-bottom: 2rem;
+}
+
+.origin-story h2,
+.impact h2,
+.vision h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.story-text {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* 社会影响部分 */
+.impact {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.impact-subtitle {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.stat-item h3 {
+    color: #3498db;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #666;
+}
+
+/* 愿景部分 */
+.vision {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.vision-quote {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.vision-text {
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .story-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .vision-quote {
+        font-size: 1.1rem;
+    }
+} 
